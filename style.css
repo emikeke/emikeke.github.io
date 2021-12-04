@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 1500px;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/*z-index used to blur out edges to next page*/
+section:before {
+  content: "";
+  position: absolute;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 3;
+}
+
+#first-page:before {
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top , rgb(233, 233, 233), transparent);
+  z-index: 4;
+}
+
+#second-page {
+  background-color: rgb(233, 233, 233);
+  color: white;
+}
+
+#dog {
+  position: relative;
+  width: auto;
+  max-height: 70px;
+  margin-top: 64vh;
+}
+
+#sun {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/*z-index used here to layer components*/
+#sky {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* # used for id, . used for classes */
+#header {
+  background-color: red;
+  padding: 10px;
+  border-radius: 2px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 3;
+  color:#ffffff;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 340px;
+  margin-left: 597px;
+}
+
+#big-mountain {
+  z-index: 2;
+}

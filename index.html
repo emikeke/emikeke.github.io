@@ -1,3 +1,47 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emily Ke</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img src="images/1a.png" alt="sun" id="sun">
+    <img src="images/1b.png" alt="sky" id="sky">
+    <h2 id="header">Emily Ke</h2>
+    <section id="first-page">
+      <img src="images/2.png" alt="big-mountain" id="big-mountain">
+      <img src="images/3.png" alt="med-mountain" id="med-mountain">
+      <img src="images/5.png" alt="snow" id="snow">
+      <img src="images/6.png" alt="back-snowfield" id ="back-snowfield">
+      <img src="images/7.png" alt="front-snowfield" id="front-snowfield">
+      <img src="images/8.png" alt="pomeranian" id="dog">
+    </section>
+    <section id="second-page">
+      <div>
+        <h1>About Me</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!
+      </div>
+    </section>
+    <script type="text/javascript">
+      let sun = document.getElementById("sun");
+      let bigMountain = document.getElementById("big-mountain");
+      let medMountain = document.getElementById("med-mountain");
+      let snow = document.getElementById("snow");
+      let backSnowfield = document.getElementById("back-snowfield");
+      let frontSnowfield = document.getElementById("front-snowfield");
+      let dog = document.getElementById("dog");
 
-test2
+      window.addEventListener("scroll", function(){
+        let value = window.scrollY;
+        //leave constant for testing purposes
+        const e = 5.5;
+        sun.style.bottom = value * -0.25 + "px";
+        bigMountain.style.top = value * 0.55 + "px";
+        medMountain.style.top = value * 0.70 + "px";
+        backSnowfield.style.top = value * 0.5 + "px";
+        frontSnowfield.style.top = value * 0.25 + "px";
+        dog.style.top = value * 0.5 + "px";
+      })
+    </script>
+  </body>
+</html>
