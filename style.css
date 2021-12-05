@@ -101,3 +101,5 @@ section img {
 .nav-link:hover {
   color:#79b0ff !important;
 }
+
+@media (max-width: 640px)
