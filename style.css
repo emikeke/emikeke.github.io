@@ -38,25 +38,24 @@ section img {
   z-index: 3;
 }
 
-#first-page:before {
+#home-page:before {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background: linear-gradient(to top , #e9e9e9, transparent);
+  background: linear-gradient(to top , #ffffff, transparent);
   z-index: 4;
 }
 
-#second-page {
-  background-color: #e9e9e9;
-  color: white;
+#about-page {
+  background-color: #ffffff;
 }
 
 #dog {
   position: relative;
   width: auto;
   height: 10vh;
-  margin-left: 47vw;
-  margin-top: 79vh;
+  margin-left: 3vw;
+  margin-top: 66vh;
 }
 
 #sun {
@@ -97,4 +96,8 @@ section img {
 .font-amiko {
   font-family: "Amiko";
   font-weight: 600;
+}
+
+.nav-link:hover {
+  color:#79b0ff !important;
 }
