@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Emily Ke</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   </head>
+
   <body>
+
     <img src="images/1a.png" alt="sun" id="sun">
     <img src="images/1b.png" alt="sky" id="sky">
-    <h2 id="header">Emily Ke</h2>
+    <h2 id="welcome">Welcome!</h2>
+
     <section id="first-page">
       <img src="images/2.png" alt="big-mountain" id="big-mountain">
       <img src="images/3.png" alt="med-mountain" id="med-mountain">
@@ -16,12 +23,15 @@
       <img src="images/7.png" alt="front-snowfield" id="front-snowfield">
       <img src="images/8.png" alt="pomeranian" id="dog">
     </section>
+
     <section id="second-page">
       <div>
         <h1>About Me</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!
       </div>
     </section>
+
+    <script src="jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
       let sun = document.getElementById("sun");
       let bigMountain = document.getElementById("big-mountain");
@@ -30,18 +40,29 @@
       let backSnowfield = document.getElementById("back-snowfield");
       let frontSnowfield = document.getElementById("front-snowfield");
       let dog = document.getElementById("dog");
+      let welcome = document.getElementById("welcome");
 
       window.addEventListener("scroll", function(){
-        let value = window.scrollY;
+        let parallaxValue = window.scrollY;
         //leave constant for testing purposes
         const e = 5.5;
-        sun.style.bottom = value * -0.25 + "px";
-        bigMountain.style.top = value * 0.55 + "px";
-        medMountain.style.top = value * 0.70 + "px";
-        backSnowfield.style.top = value * 0.5 + "px";
-        frontSnowfield.style.top = value * 0.25 + "px";
-        dog.style.top = value * 0.5 + "px";
-      })
+        sun.style.right = parallaxValue * 0.25 + "px";
+        bigMountain.style.top = parallaxValue * 0.55 + "px";
+        medMountain.style.top = parallaxValue * 0.70 + "px";
+        snow.style.left = parallaxValue * 0.15 + "px";
+        backSnowfield.style.top = parallaxValue * 0.5 + "px";
+        frontSnowfield.style.top = parallaxValue * 0.25 + "px";
+        dog.style.top = parallaxValue * 0.5 + "px";
+        welcome.style.bottom = 250 + parallaxValue * 0.5 + "px";
+
+        sun.style.filter = "blur(" + parallaxValue/10 + "px)";
+        bigMountain.style.filter = "blur(" + parallaxValue/50 + "px)";
+        medMountain.style.filter = "blur(" + parallaxValue/50 + "px)";
+        snow.style.filter = "blur(" + parallaxValue/50 + "px)";
+        frontSnowfield.style.filter = "blur(" + parallaxValue/50 + "px)";
+        backSnowfield.style.filter = "blur(" + parallaxValue/50 + "px)";
+        dog.style.filter = "blur(" + parallaxValue/50 + "px)";
+      });
     </script>
   </body>
 </html>
