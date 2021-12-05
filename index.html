@@ -15,6 +15,7 @@
     <img src="images/1b.png" alt="sky" id="sky">
     <h2 id="welcome">Welcome!</h2>
 
+    <!-- Designed by Freepik -->
     <section id="first-page">
       <img src="images/2.png" alt="big-mountain" id="big-mountain">
       <img src="images/3.png" alt="med-mountain" id="med-mountain">
@@ -53,7 +54,7 @@
         backSnowfield.style.top = parallaxValue * 0.5 + "px";
         frontSnowfield.style.top = parallaxValue * 0.25 + "px";
         dog.style.top = parallaxValue * 0.5 + "px";
-        welcome.style.bottom = 250 + parallaxValue * 0.5 + "px";
+        welcome.style.bottom = 250 + parallaxValue * 0.50 + "px";
 
         sun.style.filter = "blur(" + parallaxValue/10 + "px)";
         bigMountain.style.filter = "blur(" + parallaxValue/50 + "px)";
@@ -62,6 +63,7 @@
         frontSnowfield.style.filter = "blur(" + parallaxValue/50 + "px)";
         backSnowfield.style.filter = "blur(" + parallaxValue/50 + "px)";
         dog.style.filter = "blur(" + parallaxValue/50 + "px)";
+        welcome.style.filter = "blur(" + parallaxValue/15 + "px)";
       });
     </script>
   </body>
