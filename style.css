@@ -47,7 +47,7 @@ section img {
 }
 
 #about-page {
-  background-color: #ffffff;
+  background-color: #38d12d;
 }
 
 #dog {
@@ -102,4 +102,73 @@ section img {
   color:#79b0ff !important;
 }
 
-@media (max-width: 640px)
+.title-format {
+  font-family: "Fredoka One";
+}
+
+.colored-word {
+  color:#79b0ff;
+  font-weight: bold;
+}
+
+/* .content-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content-container .card {
+  position: relative;
+  padding: 5px;
+  width: 270px;
+  height: 250px;
+  background: coral;
+  margin: 27px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0px 15px 45px grey;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content-container .card .card-question {
+  background: #79b0ff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-container .card:hover .card-question {
+  background: #79b0ff;
+  height: 0;
+  width: 0;
+  color: transparent;
+} */
+
+.card-content {
+  display: none;
+}
+
+.card-container:hover .card-content{
+  display: block;
+}
+
+.card-container:hover .card-question {
+  display: none;
+}
+
+.card-container {
+  width: 100%;
+  height: 450px;
+}
+
+.card-question, .card-content {
+  margin: auto;
+}
+
+section {
+  width: 100%;
+}
