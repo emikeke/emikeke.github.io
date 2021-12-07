@@ -177,27 +177,10 @@ section img {
   margin: 0 17%;
 }
 
-/*.card-content {
-  display: none;
+.content {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 350px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-
-.card-container:hover .card-content{
-  display: block;
-}
-
-.card-container:hover .card-question {
-  display: none;
-}
-
-.card-container {
-  width: 100%;
-  height: 450px;
-}
-
-.card-question, .card-content {
-  margin: auto;
-}
-
-section {
-  width: 100%;
-}/*
