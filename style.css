@@ -41,8 +41,8 @@ section img {
 #home-page:before {
   bottom: 0;
   width: 100%;
-  height: 50px;
-  background: linear-gradient(to top , #ffffff, transparent);
+  height: 10px;
+  background: linear-gradient(to top, #ffffff, transparent);
   z-index: 4;
 }
 
@@ -117,6 +117,7 @@ section img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 999;
 }
 
 .content-container .card {
@@ -126,7 +127,11 @@ section img {
   margin: 27px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 20px 20px 50px rgb(171, 171, 171);
+  box-shadow: 20px 20px 50px rgb(151, 151, 151);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
   transition: 0.5s;
   display: flex;
   justify-content: center;
@@ -142,13 +147,14 @@ section img {
 
 .content-container .card:hover {
   filter: blur(0px);
-  transform: scale(1);
+  transform: scale(1.05);
   transition: 0.5s;
   opacity: 1;
 }
 
 .card .card-cover {
   position: relative; 
+  z-index: 999;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -166,6 +172,7 @@ section img {
   background: white;
   display: none;
   align-content: center;
+  backdrop-filter: blur(5px);
 }
 
 .card .question-container .content p {
@@ -182,4 +189,38 @@ section img {
   overflow: hidden;
   overflow-y: scroll;
   height: 360px;
+}
+
+/*#about-page::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff, #a1cdff, #ffffff);
+  clip-path: circle(15% at right 60%);
+}
+
+#about-page::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( #ffffff, #c7e1ff, #ffffff);
+  clip-path: circle(55% at 30% 60%);
+}*/
+
+#about-page h1 {
+  position: relative;
+  z-index: 999;
+}
+
+#about-page p {
+  position: relative;
+  z-index: 999;
 }
