@@ -20,6 +20,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e37ab57da2.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
 
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
@@ -157,53 +158,54 @@
           <p id="about-p">My most recent work.</p>
         </div>
 
-        <div id="projects-container">
+        <div id="projects-container swiper">
+          <div class="swiper-wrapper">
+            <div id="projects-content swiper-slide">
+              <img src="images/project1.png" alt="" class="project-image">
+              <div class="project-data">
+                <h2 class="project-title">Project 1</h2>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+                <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
 
-          <div id="projects-content grid">
-            <img src="images/project1.png" alt="" class="project-image">
-            <div class="project-data">
-              <h2 class="project-title">Project 1</h2>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
-              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
+            <div id="projects-content swiper-slide">
+              <img src="images/project1.png" alt="" class="project-image">
+              <div class="project-data">
+                <h2 class="project-title">Project 2</h2>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+                <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+
+            <div id="projects-content swiper-slide">
+              <img src="images/project1.png" alt="" class="project-image">
+              <div class="project-data">
+                <h2 class="project-title">Project 3</h2>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+                <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+
+            <div id="projects-content swiper-slide">
+              <img src="images/project1.png" alt="" class="project-image">
+              <div class="project-data">
+                <h2 class="project-title">Project 4</h2>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+                <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More</a>
+              </div>
             </div>
           </div>
-
-          <div id="projects-content grid">
-            <img src="images/project1.png" alt="" class="project-image">
-            <div class="project-data">
-              <h2 class="project-title">Project 2</h2>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
-              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div id="projects-content grid">
-            <img src="images/project1.png" alt="" class="project-image">
-            <div class="project-data">
-              <h2 class="project-title">Project 3</h2>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
-              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div id="projects-content grid">
-            <img src="images/project1.png" alt="" class="project-image">
-            <div class="project-data">
-              <h2 class="project-title">Project 4</h2>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
-              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More
-                <i class="fa-solid fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-
         </div>
+
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-circle-chevron-right swiper-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-circle-chevron-left swiper-icon"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
