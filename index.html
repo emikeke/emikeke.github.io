@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"
-    >
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
@@ -19,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e37ab57da2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
@@ -99,9 +100,8 @@
     <section id="about-page">
       <div>
         <h1 class="title-format">About Me</h1>
-        <br>
         <div>
-          <p id="about-p">Hello I'm Emily, and I'm a <span class="colored-word">Front-end Developer</span>. I love spending time with my little pomeranian Coco.</p>
+          <p id="about-p">Hello I'm Emily, and I'm a <span class="colored-word">Front-end Developer</span>. In my free time, I love spending time with my little dog Coco and my little sister's cat Pumpkin.</p>
         </div>
         <div class="content-container">
           <div class="card">
@@ -120,7 +120,7 @@
                 <h2 class="card-question">Career Transition</h2>
               </div>
               <div class="content">
-                <p>Fast forward two decades, I was out of school with a Commerce degree and a job that left me slightly unsatisfied. I thought back to my small hobby, but I didn't know how to make it a career. I went to Google for resources. I took multiple online classes and enjoyed it so much. It was then I decided to pursue my small hobby as a full time commitment. I quit my job and started a 12-week coding bootcamp in September of 2021. This reaffirmed my decision to be a Front End Developer.</p>
+                <p>Fast forward two decades, I was out of school with a Commerce degree and a job that left me slightly unsatisfied. I thought back to my small hobby, but I didn't know how to make it a career. I went to Google for resources. I took multiple online classes and enjoyed it so much. It was then I decided to pursue my small hobby as a full time commitment. I quit my job and started a 12-week coding bootcamp in September of 2021. This reaffirmed my decision to be a front-end developer.</p>
               </div>
             </div>
           </div>
@@ -153,7 +153,57 @@
     <section id="projects-page">
       <div>
         <h1 class="title-format">My Projects</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!
+        <div>
+          <p id="about-p">My most recent work.</p>
+        </div>
+
+        <div id="projects-container">
+
+          <div id="projects-content grid">
+            <img src="images/project1.png" alt="" class="project-image">
+            <div class="project-data">
+              <h2 class="project-title">Project 1</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="projects-content grid">
+            <img src="images/project1.png" alt="" class="project-image">
+            <div class="project-data">
+              <h2 class="project-title">Project 2</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="projects-content grid">
+            <img src="images/project1.png" alt="" class="project-image">
+            <div class="project-data">
+              <h2 class="project-title">Project 3</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More 
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="projects-content grid">
+            <img src="images/project1.png" alt="" class="project-image">
+            <div class="project-data">
+              <h2 class="project-title">Project 4</h2>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita est ad, similique aspernatur laborum vero atque? Hic tempore, minima repellat reiciendis a corrupti enim laboriosam vero molestiae cumque sed!</p>
+              <a href="https://github.com/emikeke/Stacks" class="btn btn-primary">Read More
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 

@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  font-family: "Amiko";
 }
 
 /*z-index used to blur out edges to next page*/
@@ -95,12 +96,13 @@ section img {
 
 @media (max-width: 830px) {
   #welcome {
-    font-size: 6vw;
+    font-size: 5vw;
+    margin-left: 10px;
   }
   .content-container .card {
     position: relative;
     width: 270px;
-    height: 300px;
+    height: 100px;
     margin: 27px;
     overflow: hidden;
     border-radius: 20px;
@@ -133,6 +135,7 @@ section img {
 
 .title-format {
   font-family: "Fredoka One";
+  font-size: 3rem;
 }
 
 .colored-word {
@@ -258,5 +261,34 @@ section img {
   #welcome {
     font-size: 8vw;
   }
+}
+
+.project-image {
+  position: relative;
+  width: auto;
+  height: 40vh;
+}
+
+#projects-container {
+  overflow: initial;
+}
+
+#projects-content {
+  padding: 0 1.5rem;
+}
+
+.project-image {
+  width: 500px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.project-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.project-desciption {
+  margin-bottom: var(--mb-0-75);
 }
 
