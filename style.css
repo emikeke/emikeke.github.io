@@ -136,6 +136,8 @@ section img {
 .title-format {
   font-family: "Fredoka One";
   font-size: 3rem;
+  text-align: center;
+  
 }
 
 .colored-word {
@@ -243,17 +245,12 @@ section img {
   position: relative;
   height: 100%;
   width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+  border-radius: 1rem
 }
 
 #projects-page {
   max-width: 100vw;
-  background-color: aquamarine;
-}
-
-.container {
-  margin-bottom: 5rem;
+  background-color: #ffffff
 }
 
 #projects-content {
@@ -275,13 +272,13 @@ section img {
 }
 
 .swiper-button-prev {
-  top: 11.75rem;
-  left: 1.5rem;
+  top: 8.75rem;
+  left: 0.65rem;
 }
 
 .swiper-button-next {
-  top: 11.75rem;
-  right: 1.5rem;
+  top: 8.75rem;
+  right: 0.65rem;
 }
 
 .swiper {
@@ -291,7 +288,7 @@ section img {
 .project-title {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -299,27 +296,24 @@ section img {
   background-color: #79b0ff;
 }
 
-.header {
-  margin-bottom: 2.5rem;
-}
-
 .swiper-wrapper {
   margin-bottom: 3.5rem;
 }
+.centered {
+  text-align: center;
+}
 
-/* for small phones (iphone 8) */
-@media screen and (max-width: 568px) {
+/* for small medium screens */
+@media screen and (max-width: 1024px) {
   .swiper-button-prev {
     display: none;
   }
-  
   .swiper-button-next {
     display: none;
   }
   .header {
     margin-bottom: 2.5rem;
   }
-
   .swiper-wrapper {
     margin-bottom: 4rem;
   }
@@ -344,67 +338,54 @@ section img {
   }
 }
 
-/* for medium screens */
-@media screen and (min-width: 568px) {
-  .centered {
-    text-align: center;
-  }
-  .swiper-button-prev {
-    top: 19.75rem;
-    left: 1.5rem;
-  }
-  .swiper-button-next {
-    top: 19.75rem;
-    right: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .centered {
-    text-align: center;
-  }
-  .swiper-button-prev {
-    top: 23.75rem;
-    left: 1.5rem;
-  }
-  .swiper-button-next {
-    top: 23.75rem;
-    right: 1.5rem;
-  }
-}
-
+/* for large screen */
 @media screen and (min-width: 1024px) {
   .project-image {
     position: relative;
-    height: 17rem;
-    width: 35rem;
-    margin-left: 5rem;
-    margin-top: 9rem;
-    border-radius: 1rem;
-    padding: 2rem;
+    width: 50%;
+    margin-left: 8rem;
+    margin-top: 0rem; 
+    border-radius: 2rem;
+    padding: 0.5rem;
+    border: 3px solid #b4d3ff
   }
   .project-title {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    margin-top: 7rem;
     text-align: left;
   }
   .swiper-button-prev {
-    top: 14.75rem;
-    left: 1.5rem;
+    top: calc(50% - 1.5rem);
+    left: 3.65rem;
   }
   .swiper-button-next {
-    top: 14.75rem;
-    right: 1.5rem;
+    top: calc(50% - 1.5rem);
+    right: 3.65rem;
+  }
+
+  .swiper-button-next i, .swiper-button-prev i {
+    background-color: white;
+    border-radius: 50%;
   }
   .projects-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
   }
   .centered {
     text-align: left;
   }
+  .project-data {
+    padding: 2rem;
+    margin-right: 5rem;
+    margin-bottom: 2.5rem;
+  }
+  .title-format {
+    margin-bottom: 2rem;
+  }
+} 
+
+.w-90 {
+  width: 98%;
 }

@@ -1,6 +1,5 @@
 $(window).on("load", function(){
   const swiper = new Swiper(".swiper", {
-    cssMode: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
