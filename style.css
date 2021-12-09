@@ -358,3 +358,53 @@ section img {
     right: 1.5rem;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .centered {
+    text-align: center;
+  }
+  .swiper-button-prev {
+    top: 23.75rem;
+    left: 1.5rem;
+  }
+  .swiper-button-next {
+    top: 23.75rem;
+    right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-image {
+    position: relative;
+    height: 17rem;
+    width: 35rem;
+    margin-left: 5rem;
+    margin-top: 9rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .project-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 7rem;
+    text-align: left;
+  }
+  .swiper-button-prev {
+    top: 14.75rem;
+    left: 1.5rem;
+  }
+  .swiper-button-next {
+    top: 14.75rem;
+    right: 1.5rem;
+  }
+  .projects-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .centered {
+    text-align: left;
+  }
+}
