@@ -223,30 +223,6 @@ section img {
   height: 360px;
 }
 
-/*#about-page::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#ffffff, #a1cdff, #ffffff);
-  clip-path: circle(15% at right 60%);
-}
-
-#about-page::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient( #ffffff, #c7e1ff, #ffffff);
-  clip-path: circle(55% at 30% 60%);
-}*/
-
 #about-page h1 {
   position: relative;
   z-index: 999;
@@ -265,51 +241,105 @@ section img {
 
 .project-image {
   position: relative;
-  width: auto;
-  height: 40vh;
-  width: 500px;
-  border-radius: 0.5rem;
-  justify-self: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 #projects-page {
   max-width: 100vw;
+  background-color: aquamarine;
 }
-/* .projects-container {
-  overflow: initial;
-} */
 
-/* #projects-content {
+.container {
+  margin-bottom: 5rem;
+}
+
+#projects-content {
   padding: 0 1.5rem;
-} */
+} 
 
-.project-title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-}
-
-.project-desciption {
-  margin-bottom: var(--mb-0-75);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.swiper-button-prev::after, .swiper-button-next::after {
   content: "";
 }
 
 .swiper-icon {
   font-size: 3rem;
-  color: var(--first-color);
+  color: #79b0ff;
+}
+
+.swiper-icon:hover {
+  font-size: 3rem;
+  color: #b4d3ff;
 }
 
 .swiper-button-prev {
-  left: 2.5rem;
+  top: 11.75rem;
+  left: 1.5rem;
 }
 
 .swiper-button-next {
-  right: 2.5rem;
+  top: 11.75rem;
+  right: 1.5rem;
 }
 
-.swiper-pagination {
-  bottom: 2.5rem;
+.swiper {
+  width: 100%;
+}
+
+.project-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #79b0ff;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.swiper-wrapper {
+  margin-bottom: 3.5rem;
+}
+
+/* for small phones (iphone 8) */
+@media screen and (max-width: 375px) {
+  .swiper-button-prev {
+    display: none;
+  }
+  
+  .swiper-button-next {
+    display: none;
+  }
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 4rem;
+  }
+  .centered {
+    text-align: center;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .project-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .project-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 1rem;
+  }
 }
