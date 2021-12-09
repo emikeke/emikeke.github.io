@@ -1,12 +1,14 @@
-let swiper = new Swiper(".projects-container", {
-  cssMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination"
-  },
-  mousewheel: true,
-  keyboard: true,
+$(window).on("load", function(){
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    keyboard: true,
+  });
 });

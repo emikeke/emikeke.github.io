@@ -267,21 +267,21 @@ section img {
   position: relative;
   width: auto;
   height: 40vh;
-}
-
-#projects-container {
-  overflow: initial;
-}
-
-#projects-content {
-  padding: 0 1.5rem;
-}
-
-.project-image {
   width: 500px;
   border-radius: 0.5rem;
   justify-self: center;
 }
+
+#projects-page {
+  max-width: 100vw;
+}
+/* .projects-container {
+  overflow: initial;
+} */
+
+/* #projects-content {
+  padding: 0 1.5rem;
+} */
 
 .project-title {
   font-size: var(--h3-font-size);
@@ -292,3 +292,24 @@ section img {
   margin-bottom: var(--mb-0-75);
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-icon {
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: 2.5rem;
+}
+
+.swiper-button-next {
+  right: 2.5rem;
+}
+
+.swiper-pagination {
+  bottom: 2.5rem;
+}
