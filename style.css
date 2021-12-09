@@ -308,7 +308,7 @@ section img {
 }
 
 /* for small phones (iphone 8) */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 568px) {
   .swiper-button-prev {
     display: none;
   }
@@ -341,5 +341,20 @@ section img {
     width: 100%;
     margin-top: 20px;
     border-radius: 1rem;
+  }
+}
+
+/* for medium screens */
+@media screen and (min-width: 568px) {
+  .centered {
+    text-align: center;
+  }
+  .swiper-button-prev {
+    top: 19.75rem;
+    left: 1.5rem;
+  }
+  .swiper-button-next {
+    top: 19.75rem;
+    right: 1.5rem;
   }
 }
