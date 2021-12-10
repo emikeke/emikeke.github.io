@@ -346,6 +346,7 @@ section img {
     border-radius: 2rem;
     padding: 0.5rem;
     box-shadow: 5px 5px 15px rgb(151, 151, 151);
+
   }
   .project-title {
     font-weight: bold;
@@ -380,10 +381,15 @@ section img {
     margin-bottom: 2.5rem;
   }
   .title-format {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .swiper-wrapper {
+    align-items: center;
   }
 } 
 
 .w-90 {
-  width: 98%;
+  width: 98%; 
 }
+
