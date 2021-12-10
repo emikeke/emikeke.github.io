@@ -108,8 +108,6 @@ section img {
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgb(151, 151, 151);
     background: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     transition: 0.5s;
     display: flex;
@@ -344,10 +342,10 @@ section img {
     position: relative;
     width: 50%;
     margin-left: 8rem;
-    margin-top: 0rem; 
+    margin-top: 1rem; 
     border-radius: 2rem;
     padding: 0.5rem;
-    border: 3px solid #b4d3ff
+    box-shadow: 5px 5px 15px rgb(151, 151, 151);
   }
   .project-title {
     font-weight: bold;
@@ -382,7 +380,7 @@ section img {
     margin-bottom: 2.5rem;
   }
   .title-format {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 } 
 
