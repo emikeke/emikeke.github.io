@@ -233,6 +233,16 @@ section img {
   z-index: 999;
 }
 
+.btn-primary {
+  background-color: #79b0ff;
+  border: 1px solid #79b0ff;
+}
+
+.btn-primary:hover {
+  background-color: #b4d3ff;
+  border: 1px solid #b4d3ff;
+}
+
 @media (min-width: 973px) {
   #welcome {
     font-size: 8vw;
@@ -295,7 +305,7 @@ section img {
 }
 
 .swiper-wrapper {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 .centered {
   text-align: center;
@@ -393,3 +403,6 @@ section img {
   width: 98%; 
 }
 
+#submit-button {
+  text-align: center;
+}
