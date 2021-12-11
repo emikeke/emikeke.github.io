@@ -98,7 +98,7 @@ section img {
   #welcome {
     font-size: 5vw;
     margin-left: 10px;
-  }
+  }/* card components
   .content-container .card {
     position: relative;
     width: 270px;
@@ -113,11 +113,8 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  }*/
   h1 {
-    margin: 20px;
-  }
-  #about-p {
     margin: 20px;
   }
 }
@@ -133,9 +130,8 @@ section img {
 
 .title-format {
   font-family: "Fredoka One";
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-  
 }
 
 .colored-word {
@@ -143,6 +139,8 @@ section img {
   font-weight: bold;
 }
 
+
+/* card components
 .content-container {
   position: relative;
   display: flex;
@@ -221,17 +219,7 @@ section img {
   overflow: hidden;
   overflow-y: scroll;
   height: 360px;
-}
-
-#about-page h1 {
-  position: relative;
-  z-index: 999;
-}
-
-#about-page p {
-  position: relative;
-  z-index: 999;
-}
+}*/
 
 .btn-primary {
   background-color: #79b0ff;
@@ -247,6 +235,10 @@ section img {
   #welcome {
     font-size: 8vw;
   }
+}
+
+.title-container {
+  margin-bottom: 2rem;
 }
 
 .project-image {
@@ -405,4 +397,28 @@ section img {
 
 #submit-button {
   text-align: center;
+}
+
+/* revised about-page */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 43rem;
+}
+
+ul {
+  columns: 5rem 3;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+#about-p {
+  font-weight: bold;
+}
+
+ul {
+  margin-top: -15px;
 }

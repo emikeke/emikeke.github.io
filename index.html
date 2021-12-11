@@ -11,16 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/e37ab57da2.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
-    <script src="./scripts/index.js"></script>
 
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
@@ -98,59 +93,35 @@
       });
     </script>
 
+    <div data-aos="fade-down" 
+    data-aos-offset="300">
     <section id="about-page">
-      <div>
-        <h1 class="title-format">About Me</h1>
-        <div>
-          <p id="about-p">Hello I'm Emily, and I'm a <span class="colored-word">Front-end Developer</span>. In my free time, I love spending time with my little dog Coco and my little sister's cat Pumpkin.</p>
+      <div class="about-container">
+        <div class="title-container">
+          <h1 class="title-format">About Me</h1>
         </div>
-        <div class="content-container">
-          <div class="card">
-            <div class="question-container">
-              <div class="card-cover">
-                <h2 class="card-question">Why Coding?</h2>
-              </div>
-              <div class="content">
-                <p>I was fascinated with computers at a young age. It began with playing computer games in 2000 on my dad's computer at work. In 2004, I figured out how to hide the title of the song that was playing on my MySpace page because I didn't want people to steal my playlist. All things added together, coding was always a small hobby I had. I loved learning but I didn't consider it a possible career path at the time.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="question-container">
-              <div class="card-cover">
-                <h2 class="card-question">Career Transition</h2>
-              </div>
-              <div class="content">
-                <p>Fast forward two decades, I was out of school with a Commerce degree and a job that left me slightly unsatisfied. I thought back to my small hobby, but I didn't know how to make it a career. I went to Google for resources. I took multiple online classes and enjoyed it so much. It was then I decided to pursue my small hobby as a full time commitment. I quit my job and started a 12-week coding bootcamp in September of 2021. This reaffirmed my decision to be a front-end developer.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="question-container">
-              <div class="card-cover">
-                <h2 class="card-question">Technologies I'm Currently Working With</h2>
-              </div>
-              <div class="content">
-                <p>Here are some technologies that I'm currently working with:
-                  <ul>
-                    <li>CSS</li>
-                    <li>EJS</li>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                    <li>JQuery</li>
-                    <li>Node.js</li>
-                    <li>Postgres</li>
-                    <li>React</li>
-                    <li>SQL</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <h2 id="about-p">Hello I'm Emily. I'm a <span class="colored-word">Front-end Developer</span>.</h2>
+          <p>I graduated school with a Commerce degree from McMaster University and more recently, Lighthouse Lab's Full Stack Web Development bootcamp.</p>
+          <p>Aside from coding, I spend most of my free time playing League of Legends and spending time with my cat and dog.</p>
+          <p>Here are some technologies that I'm currently working with:
+            <ul>
+              <li>CSS</li>
+              <li>EJS</li>
+              <li>HTML</li>
+              <li>Javascript</li>
+              <li>JQuery</li>
+              <li>Node.js</li>
+              <li>Postgres</li>
+              <li>React</li>
+              <li>SQL</li>
+            </ul>
+          </p>
       </div>
     </section>
+    </div>
 
+    <div data-aos="fade-down" 
+    data-aos-offset="300">
     <section id="projects-page">
       <div class="container-fluid w-90">
         <h1 class="title-format header">My Projects</h1>
@@ -212,12 +183,15 @@
 
     </div>
     </section>
+    </div>
 
-    <section id="contact-page">
-      <div>
-        <h1 class="title-format">Contact Me</h1>
-        
+    <div data-aos="fade-down" 
+    data-aos-offset="300">
+    <section id="contact-page">   
         <div class="form-container">
+          <div class="title-container">
+            <h1 class="title-format">Contact Me</h1>
+          </div>
           <form class="contact-form" action="https://formsubmit.co/06869aca6a7d67a87b2ac84bbd021fe7" method="POST">
             <div class="form-col">
               <div class="col-md-14 mb-3">
@@ -241,5 +215,14 @@
         </div>
       </div>
     </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e37ab57da2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>

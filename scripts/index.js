@@ -11,4 +11,5 @@ $(window).on("load", function(){
     },
     keyboard: true,
   });
+  AOS.init();
 });
