@@ -117,6 +117,9 @@ section img {
   h1 {
     margin: 20px;
   }
+  .project-data {
+    margin-bottom: 3rem;
+  }
 }
 
 .font-amiko {
@@ -298,6 +301,7 @@ section img {
 .swiper-wrapper {
   margin-bottom: 4rem;
 }
+
 .centered {
   text-align: center;
 }
@@ -314,7 +318,7 @@ section img {
     margin-bottom: 2.5rem;
   }
   .swiper-wrapper {
-    margin-bottom: 4rem;
+    margin-bottom: -6rem;
   }
   .centered {
     text-align: center;
@@ -347,7 +351,6 @@ section img {
     border-radius: 2rem;
     padding: 0.5rem;
     box-shadow: 5px 5px 15px rgb(151, 151, 151);
-
   }
   .project-title {
     font-weight: bold;
@@ -362,7 +365,6 @@ section img {
     top: calc(50% - 1.5rem);
     right: 3.65rem;
   }
-
   .swiper-button-next i, .swiper-button-prev i {
     background-color: white;
     border-radius: 50%;
@@ -384,9 +386,9 @@ section img {
   .title-format {
     margin-bottom: 0.5rem;
   }
-
   .swiper-wrapper {
     align-items: center;
+    margin-bottom: 2rem;
   }
 } 
 
@@ -399,6 +401,10 @@ section img {
 }
 
 /* revised about-page */
+
+.about-page {
+  width: 100%;
+}
 
 .about-container {
   display: flex;
@@ -416,4 +422,16 @@ section img {
   margin-top: -13px;
   columns: 5rem 3;
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    width: 70vw;
+  }
+  .title-container {
+    margin-top: 3rem;
+  }
+  .swiper-wrapper {
+    margin-bottom: 0rem;
+  }
 }
