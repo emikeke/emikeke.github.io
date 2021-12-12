@@ -139,7 +139,6 @@ section img {
   font-weight: bold;
 }
 
-
 /* card components
 .content-container {
   position: relative;
@@ -419,6 +418,6 @@ ul {
   font-weight: bold;
 }
 
-ul {
-  margin-top: -15px;
+#no-space {
+  margin-top: -13px;
 }
