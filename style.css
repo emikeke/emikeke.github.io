@@ -408,15 +408,12 @@ section img {
   width: 43rem;
 }
 
-ul {
-  columns: 5rem 3;
-  margin-left: 2rem;
-}
-
 #about-p {
   font-weight: bold;
 }
 
 #no-space {
   margin-top: -13px;
+  columns: 5rem 3;
+  margin-left: 2rem;
 }
