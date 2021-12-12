@@ -405,7 +405,7 @@ section img {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 43rem;
+  width: 43vw;
 }
 
 #about-p {
