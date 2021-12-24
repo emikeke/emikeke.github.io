@@ -434,4 +434,8 @@ section img {
   .swiper-wrapper {
     margin-bottom: 0rem;
   }
+  .project-image {
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
 }
