@@ -256,7 +256,7 @@ section img {
 }
 
 #projects-content {
-  padding: 0 1.5rem;
+  padding: 0rem;
 } 
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -432,7 +432,7 @@ section img {
     margin-top: 3rem;
   }
   .swiper-wrapper {
-    margin-bottom: 0rem;
+    margin-bottom: -5rem;
   }
   .project-image {
     border-radius: 2rem;
