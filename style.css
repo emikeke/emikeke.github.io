@@ -34,7 +34,7 @@ section img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   pointer-events: none;
   z-index: 3;
 }
@@ -293,7 +293,7 @@ section img {
 }
 
 .swiper-wrapper {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .centered {
@@ -312,7 +312,7 @@ section img {
     margin-bottom: 2.5rem;
   }
   .swiper-wrapper {
-    margin-bottom: -4rem;
+    margin-bottom: 5rem;
   }
   .centered {
     text-align: center;
@@ -339,7 +339,7 @@ section img {
 @media screen and (min-width: 1024px) {
   .project-image {
     position: relative;
-    max-width: 50%;
+    max-width: 60%;
     margin-left: 8rem;
     margin-top: 1rem; 
     border-radius: 2rem;
@@ -382,7 +382,7 @@ section img {
   }
   .swiper-wrapper {
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 } 
 
@@ -426,7 +426,7 @@ section img {
     margin-top: 3rem;
   }
   .swiper-wrapper {
-    margin-bottom: -5rem;
+    margin-bottom: 2rem;
   }
   .project-image {
     border-radius: 2rem;
