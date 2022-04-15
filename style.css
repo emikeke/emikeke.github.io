@@ -243,12 +243,6 @@ section img {
   margin-bottom: 2rem;
 }
 
-.project-image {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem
-}
 
 #projects-page {
   max-width: 100vw;
@@ -318,7 +312,7 @@ section img {
     margin-bottom: 2.5rem;
   }
   .swiper-wrapper {
-    margin-bottom: 4rem;
+    margin-bottom: -4rem;
   }
   .centered {
     text-align: center;
@@ -345,7 +339,7 @@ section img {
 @media screen and (min-width: 1024px) {
   .project-image {
     position: relative;
-    width: 50%;
+    max-width: 50%;
     margin-left: 8rem;
     margin-top: 1rem; 
     border-radius: 2rem;
